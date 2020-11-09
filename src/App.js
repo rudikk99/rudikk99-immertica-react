@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
 import { Navbar, NavbarBrand } from 'reactstrap';
 import './App.css';
+import Personall from '../components/Personall';
 
 class App extends Component {
-  render() {
+    constructor(){
+        super();
+    
+        this.state = {};
+        //this.handleClick = handleClick.bind(this);
+      }
+    render() {
       return (
           <div className="App">
               <Navbar light color="secondary">
@@ -11,6 +18,8 @@ class App extends Component {
                   <NavbarBrand href="/">Immetrica</NavbarBrand>
               </div>
               </Navbar>
+            <div>
+              </div>
           </div>
       );
   }

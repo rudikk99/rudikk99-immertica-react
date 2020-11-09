@@ -1,0 +1,61 @@
+import React, { Component } from 'react';
+
+class Service extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            records: [
+                {
+                    id: 0,
+                    name: 'Alldience - Omnimeasurement: audience measurement of any screen, any source, anywhere, anytime',
+                    image: 'assets/images/logo_alldience02.pnd',
+                    elevation: 1233,
+                    description: "Platform for Smart People Meters. Alldience can measure binge-watching, and can ingest the multinational streamers quickly and efficiently, and update their libraries promptly for additions and deletions. Alldience can support near-real-time programmatic advertising markets and other uses that require near-immediate turnaround of data."
+                },
+                {
+                    id: 1,
+                    name: 'Systems integration',
+                    image: 'assets/images/01.png',
+                    elevation: 877,
+                    description: "In an increasingly technological world, the interaction of systems is a growing problem, and it is one we love to solve. Whether the task is to integrate a new scanner into the database of a hospital without damaging imagery from the old or new systems, or to ensure correct data flow between a broadcast advertising sales department and the traffic and playout automation system, we offer timely delivery of reliable, cost-effective solutions."
+                },
+                {
+                    id: 2,
+                    name: 'Software development',
+                    image: 'assets/images/02.png',
+                    elevation: 2901,
+                    description: " At the core of our company is a cohesive group of designers and developers with wide experience in industries other than broadcasting, who have the experience and expertise to undertake software development for other industries, specifically: Financial services, Medicine, Biochemical, biomedical, clinical and pharmaceutical research, Scientific instrument control and data handling, Manufacturing We believe that understanding of the purpose and its subject matter is essential to success in building software for it. Even if the developers live in other countries (where we have access to highly skilled and educated, English-speaking professionals, for substantially less than in the U.S.), they must be led by people who are responsible for the overall quality and can stand by that responsibility. That is our approach to very large projects, especially those that might be on the verge of being cost-prohibitive to the client. We are experienced in full-stack software development, crossplatform development, multiprocess and multithread development. We offer a full life-cycle development process. RDBMS (Oracle Database, Postgres etc.), C/C++, shell scripting, Perl, Python."
+                },
+                {
+                    id: 3,
+                    name: 'Rapid-development, inexpensive reporting services',
+                    image: 'assets/images/02.png',
+                    elevation: 42,
+                    description: "Immetrica’s unique technology is used to offer periodic standard reports on audience-measurement and other data, supplementing the on-demand analysis enabled by ratings delivery systems. Such reports bridge the gap between what the ratings delivery system reports and the report you want to see, which may be differently laid out, filtered or provide historic context. The technology permits very rapid development of textual and graphic reports (in the same time usually sufficient only to produce a nonworking prototype). We offer production of these reports as a recurrent service, daily/weekly/monthly, at very affordable prices. We produce two thousand different reports in just one day! A staff of 40 full-time employees would be needed to produce them manually."
+                }
+            ],
+        };
+    }
+
+    render() {
+        const service = this.state.records.map(record => {
+            return (
+                <div key={record.id} className="col">
+                    <img src={record.image} alt={record.name} />
+                    <h2>{record.name}</h2>
+                    <p>{record.description}</p>
+                </div>
+            );
+        });
+
+        return (
+            <div className="container">
+                <div className="row">
+                    {service}
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Service;

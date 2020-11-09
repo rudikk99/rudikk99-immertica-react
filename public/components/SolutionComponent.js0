@@ -1,0 +1,146 @@
+import React, { Component } from 'react';
+
+class Solution extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            records: [
+                {
+                    id: 0,
+                    name: 'Alldience - Omnimeasurement: audience measurement of any screen, any source, anywhere, anytime',
+                    image: 'assets/images/logo_alldience02.pnd',
+                    elevation: 'interactive & smart people meters',
+                    description: "Platform for Smart People Meters. Alldience can measure binge-watching, and can ingest the multinational streamers quickly and efficiently, and update their libraries promptly for additions and deletions. Alldience can support near-real-time programmatic advertising markets and other uses that require near-immediate turnaround of data."
+                },
+                {
+                    id: 1,
+                    name: 'Auditing & preparation for accreditation',
+                    image: 'assets/images/05.png',
+                    header: 'Auditing',
+                    description: "We provide comprehensive, collection-to-delivery audits of audience measurement systems. We search for sources of error and when we find them, make clear recommendations on eliminating them. We see as our goal preparing each audited system for accreditation by the Media Rating Council in the U.S. or a similar body, even if such accreditation is never sought. We strive to maintain confidence in the service, preferably through early intervention."
+                },
+                {
+                    id: 2,
+                    name: 'Rapid-development, inexpensive reporting services',
+                    image: 'assets/images/04.png',
+                    header: 'In-house build exclusive utlra-fast technology',
+                    description: "Immetrica’s unique technology is used to offer periodic standard reports on audience-measurement and other data, supplementing the on-demand analysis enabled by ratings delivery systems. Such reports bridge the gap between what the ratings delivery system reports and the report you want to see, which may be differently laid out, filtered or provide historic context. The technology permits very rapid development of textual and graphic reports (in the same time usually sufficient only to produce a nonworking prototype). We offer production of these reports as a recurrent service, daily/weekly/monthly, at very affordable prices. We produce two thousand different reports in just one day! A staff of 40 full-time employees would be needed to produce them manually."
+                },
+                {
+                    id: 3,
+                    name: 'Analytics and interpretation',
+                    image: 'assets/images/03.png',
+                    header: 'Let us help with the analysis',
+                    description: 'Many companies know that they need additional tools and experts to determine what their ratings mean. We can assist in their interpretation and action-directed analysis. We have more than three decades of experience doing this in a wide variety of television and radio environments, including commercially challenging ones.'
+                },
+                {
+                    id: 4,
+                    name: 'Audience Measurments: Multiple delivery platforms',
+                    image: 'assets/images/07.png',
+                    header: 'Multiple delivery platforms',
+                    description: 'We will work with any delivery platform clients wish to use to deliver data and analytical capability to end users.'
+                },
+                {
+                    id: 5,
+                    name: 'Ancillary broadcast systems',
+                    image: 'assets/images/06.pnd',
+                    header: 'Channel databases, Schedule databases, Return path callback, CA systems, ...',
+                    description: "Because audience measurement depends on numerous other broadcast systems, understanding them and making data flow among them has become a familiar responsibility to us. We can make such diverse systems, and others, play together with or without a connection to audience measurement."
+                },
+                {
+                    id: 6,
+                    name: 'Audience Measurment Systems',
+                    image: 'assets/images/08.png',
+                    header: 'Classical TAM',
+                    description: 'Audience estimates, commonly known as ratings after the main type of measure, permit the valuation of advertising inventory and program and channel carriage rights. Ratings indicate the popularity of a program or a channel. Additional audience measurement data may provide information about the households or individual viewers, their other TV watching, and demographic, geographic and socioeconomic attributes. Ratings help advertisers and media buyers to select the right media at the right time'
+                },
+                {
+                    id: 7,
+                    name: 'Intab definition and loss detection',
+                    image: 'assets/images/09.png',
+                    header: 'The intab',
+                    description: 'The intab (sometimes termed the net daily reporting sample or usable sample) is the daily cooperating part of the sample, on which the ratings published for that day are based. This requires detecting STBs with data loss on that day and excluding them from the intab.'
+                },
+                {
+                    id: 8,
+                    name: 'RPD specialisation',
+                    image: 'assets/images/10.png',
+                    header: 'return-path data (RPD)',
+                    description: 'RPD can include DVR playback (and, in some systems, recording) with equal data to those for realtime viewing, permitting the two to be unified for reporting. RPD can also be more easily integrated with VOD consumption, if certain requirements are followed, as well as with OTT viewing. RPD is thus the only approach that can be used, albeit at considerable effort, to achieve measurement of all viewing, all channels on all screens at all times, including the “long tail” of continuing but diminishing long-term interest in specific programmers. It is the only means of determining the pay-TV operator’s overall programming ROI (return on investment) and the only means of measuring video consumption that is in any way future-proofed.'
+                },
+                {
+                    id: 9,
+                    name: 'Capping of tuning-without-viewing',
+                    image: 'assets/images/11.png',
+                    header: 'when TV is on but wievers left the reoom',
+                    description: 'A key problem in RPD (return path data) systems is their inability to determine when the monitor is on. Various methods are used to estimate the probability that part of a long period of viewing of the same channel is tuning-without-viewing. Unfortunately none of the large global TAM providers that also undertake RPD processing publish their algorithms in even general terms, instead treating them as industrial secrets and making comparison between them almost impossible. We are successfully removing most of this RPD-specific tuning-without-viewing using transparent algorithms and are working on improved and conceptually different algorithms.'
+                },
+                {
+                    id: 10,
+                    name: 'DVR time-shifting',
+                    image: 'assets/images/12.png',
+                    header: 'DVR (digital video recorder)',
+                    description: 'DVR time-shifting is a time-delay recording technology that records viewing to the hard drive of a DVR (digital video recorder), either by explicit decision of the viewer or in accordance with a set of rules (a single broadcast, a “season ticket” to record an entire series for “binge watching” at season’s end, explicit genre rules, or in some systems, individual “if you liked this, you’ll probably like that” suggestions). Recorded broadcasts may then be viewed later and with trickplay capability (pause, rewind, fast-forward, speed multiples).'
+                },
+                {
+                    id: 11,
+                    name: 'VOD and integration into overall viewing',
+                    image: 'assets/images/13.png',
+                    header: 'There are several types of VOD',
+                    description: 'VOD (video-on-demand) is a service that permits playback of programs entirely outside the context of broadcast schedules, although much VOD content does come from that which was broadcast. VOD can also include programs that no-one is planning to broadcast, greatly expanding the variety of available content.'
+                },
+                {
+                    id: 12,
+                    name: 'OTT, convergence, third screens',
+                    image: 'assets/images/14.png',
+                    header: 'OTT (over-the-top) ',
+                    description: 'OTT content offered independently of pay-TV systems. It can be played on broadband-connected computers and smartphones (from which it can optionally be streamed to TV monitors using products like Google Chromecast, Amazon Fire TV or Roku), on smart TVs or on broadband-connected gaming platforms. Independent OTT operators, such as Netflix in many countries, or Hulu or Amazon Instant Video in the U.S., compete directly with pay-TV, and especially its VOD services.'
+                },
+                {
+                    id: 13,
+                    name: 'Channel management',
+                    image: 'assets/images/15.png',
+                    header: 'automated services for channel content',
+                    description: 'Channels must be described adequately and their viewing schedules identified. In some pay-TV systems, this task is extremely complex.Some TAM providers obligate channel operators to encode their channels and programmes especially for measurement, a time-consuming and costly process with which many don’t comply, becoming unmeasurable. Others use alternative means of automated identification, also with poor reliability.'
+                },
+                {
+                    id: 14,
+                    name: 'Schedule management',
+                    image: 'assets/images/16.png',
+                    header: 'automated services for schedule content',
+                    description: 'Schedule management is the processing of detailed descriptions of broadcasts at particular times in the schedules of channels, and their linking to the channels themselves. Although this task sounds simple, in practice it often isn’t. First, the schedules must be related to the channel and to its viewing (sometimes on different identifiers), so all the difficulties of channel management are present. A second problem is identification of the series or special and the episode within a series; these are often inconsistent or incomplete, while programme and episode titles are even less standardised. Whether a sports game is live, a recorded première or a repeat dramatically affects its ratings but such designation is rarely in the schedule and then has to be supplied in processing. Genre data, and for movies, directors’ and actors’ names, all useful in searches and filtered reports, are often also incomplete, inconsistent or absent.'
+                },
+                {
+                    id: 15,
+                    name: 'Timezone management',
+                    image: 'assets/images/17.png',
+                    header: 'Channels translate to a varius timezones',
+                    description: 'The scheduling of TV programming of any large broadcast company must cope with different time zones. For example, the U.S. and Canada have six time zones, Mexico has four, and South America has three, with further variation in the observance (or not) of daylight savings time and its start and end. Broadcast networks and pay-TV channels use multiple feeds, identical but offset from each other by several hours, to show programming at the correct time in each time zone. This is further complicated by network affiliates’ and pay-TV operators’ decisions (which may affect some or all of them in the market) in some areas to deviate from the schedules intended for them by using different feeds, and by the tendency of pay-TV operators to offer multiple feeds of the same channel, especially for premium channels. Furthermore, live entertainment, breaking news and some scheduled news events, and much sports programming are carried live regardless of timezone, disrupting the rest of the same feeds’ schedules.'
+                },
+
+            ],
+        };
+    }
+
+    render() {
+        const solution = this.state.records.map(record => {
+            return (
+                <div className="col">
+                    <img src={record.image} alt={record.name} />
+                    <h2>{record.name}</h2>
+                    <p>{record.description}</p>
+                </div>
+            );
+        });
+
+        return (
+            <div className="container">
+                <div className="row">
+                    {solution}
+                </div>
+            </div>
+        );
+    }
+}
+
+export default Solution;
